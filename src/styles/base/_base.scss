@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $theme-font;
+    font-size: 16px;
+    background: $white-two-color;
+    margin: 0;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 22px;
+    @media(min-width:768px){
+        font-size: 28px;
+    }
+}
+
+.title{
+    color: $black-color;
+}
+

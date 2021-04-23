@@ -1,0 +1,15 @@
+.ui{
+    &-sidebar{
+        background: $white-two-color;
+        border-left: 2px solid $white-three-color;
+        position: relative;
+        right: 0;
+        top: 0;
+        height: 100%;
+        display: none;
+        @media(min-width:768px){
+            position: fixed;
+            display: block;
+        }
+    }
+}

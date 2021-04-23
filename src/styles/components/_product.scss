@@ -1,0 +1,43 @@
+.product{
+    &-image{
+        position: relative;
+        min-height: 168px;
+        overflow: hidden;
+        border-radius: 25px;
+        &--item{
+            border-radius: 25px;
+            height: 168px;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+    &-time{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: $white-four-color;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 10px 16px;
+        display: block;
+        border-top-right-radius: 16px;
+    }
+    &-title{
+        font-size: 22px;
+        color: $black-color;
+    }
+    &-qualification{
+        margin-right: 20px;
+        background-image:url(../../assets/icons/star.svg);
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 16px;
+        padding-left: 26px;
+        font-weight: 700;
+        font-size: 14px;
+    }
+    &-price{
+        color: $gray-color;
+        font-size: 14px;
+    }
+}

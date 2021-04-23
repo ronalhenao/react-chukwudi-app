@@ -1,0 +1,59 @@
+.banner{
+    background: $yellow-three-color;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 214px;
+    padding: 0 16px;
+    @media(min-width:1600px){
+        min-height: 280px;
+    }
+    @media(min-width:768px){
+        padding: 0;
+    }
+    &-image{
+        position: absolute;
+        bottom: 0;
+        width: 30%;
+        left: 38px;
+        display: none;
+        @media(min-width:768px){
+            display: block;
+        }
+    }
+    &-info{
+        @media(min-width:768px){
+            transform: translate(100px, 0px);
+        }
+    }
+    &-title{
+        color: $orange-color;
+        background-image: url(../../assets/images/d.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        padding-right: 60px;
+        background-size: contain;
+    }
+    p{
+        color:$gray-color;
+        margin-bottom: 0;
+    }
+    &-btn{
+        position: absolute;
+        right: 30px;
+        bottom: 20px;
+        &--link{
+            color: $orange-color;
+            &:hover{
+                color:$orange-color;
+            }
+        }
+    }
+    &-icon{
+        width: 22px;
+        padding-top: 3px;
+        filter: invert(54%) sepia(35%) saturate(3173%) hue-rotate(336deg) brightness(100%) contrast(98%);
+    }
+}
